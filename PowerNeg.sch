@@ -1,0 +1,309 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L uRack:MCP3063 U1
+U 1 1 5FCA6D5A
+P 5050 3600
+F 0 "U1" H 5650 3865 50  0000 C CNN
+F 1 "MCP3063" H 5650 3774 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4550 3600 50  0001 C CNN
+F 3 "" H 4550 3600 50  0001 C CNN
+	1    5050 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3700 6950 3700
+Wire Wire Line
+	6950 3700 6950 3250
+Wire Wire Line
+	6950 3250 4450 3250
+Wire Wire Line
+	4450 3250 4450 3600
+Wire Wire Line
+	4450 3600 4550 3600
+$Comp
+L uRack:R R3
+U 1 1 5FCA7569
+P 7250 3700
+F 0 "R3" V 7043 3700 50  0000 C CNN
+F 1 "0.24R" V 7134 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1210_3225Metric_Pad1.42x2.65mm_HandSolder" V 7180 3700 50  0001 C CNN
+F 3 "" H 7250 3700 50  0001 C CNN
+	1    7250 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6950 3700 7100 3700
+Connection ~ 6950 3700
+Wire Wire Line
+	6750 3800 7400 3800
+Wire Wire Line
+	7400 3800 7400 3700
+$Comp
+L uRack:Conn_01x02_Male J2
+U 1 1 5FCA7ED1
+P 7850 3800
+F 0 "J2" H 7822 3774 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 7822 3683 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7850 3800 50  0001 C CNN
+F 3 "" H 7850 3800 50  0001 C CNN
+	1    7850 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3800 7650 3800
+Connection ~ 7400 3800
+$Comp
+L uRack:CP C1
+U 1 1 5FCA89A5
+P 3800 5100
+F 0 "C1" H 3682 5054 50  0000 R CNN
+F 1 "1000 uf" H 3682 5145 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm" H 3838 4950 50  0001 C CNN
+F 3 "" H 3800 5100 50  0001 C CNN
+	1    3800 5100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7650 3900 7600 3900
+Wire Wire Line
+	7600 3900 7600 4550
+Wire Wire Line
+	7600 4550 7400 4550
+Wire Wire Line
+	7400 4050 7400 3800
+Wire Wire Line
+	7400 4350 7400 4550
+$Comp
+L uRack:R R2
+U 1 1 5FCAC1BB
+P 6900 5000
+F 0 "R2" H 6970 5046 50  0000 L CNN
+F 1 "8.2 k" H 6970 4955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6830 5000 50  0001 C CNN
+F 3 "" H 6900 5000 50  0001 C CNN
+	1    6900 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L uRack:R R1
+U 1 1 5FCAC522
+P 6400 4850
+F 0 "R1" V 6193 4850 50  0000 C CNN
+F 1 "1 k" V 6284 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6330 4850 50  0001 C CNN
+F 3 "" H 6400 4850 50  0001 C CNN
+	1    6400 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 4850 6650 4850
+Wire Wire Line
+	6750 3900 6900 3900
+Wire Wire Line
+	6900 3900 6900 4850
+Connection ~ 6900 4850
+Wire Wire Line
+	6900 5150 6900 5300
+Wire Wire Line
+	6900 5300 7600 5300
+Wire Wire Line
+	7600 5300 7600 4550
+Connection ~ 7600 4550
+Wire Wire Line
+	6250 4850 6100 4850
+Wire Wire Line
+	4400 4850 4400 3900
+Wire Wire Line
+	4400 3900 4550 3900
+$Comp
+L uRack:C C2
+U 1 1 5FCAE804
+P 4150 4250
+F 0 "C2" H 4035 4204 50  0000 R CNN
+F 1 "4.8 pf" H 4035 4295 50  0000 R CNN
+F 2 "footprint:C_1206" H 4188 4100 50  0001 C CNN
+F 3 "" H 4150 4250 50  0001 C CNN
+	1    4150 4250
+	-1   0    0    1   
+$EndComp
+Connection ~ 4400 4850
+$Comp
+L uRack:D D1
+U 1 1 5FCAFF87
+P 3800 4250
+F 0 "D1" V 3754 4329 50  0000 L CNN
+F 1 "D" V 3845 4329 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB" H 3800 4250 50  0001 C CNN
+F 3 "" H 3800 4250 50  0001 C CNN
+	1    3800 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 3800 4150 3800
+Wire Wire Line
+	4150 3800 4150 4100
+Wire Wire Line
+	4150 4400 4150 4850
+Wire Wire Line
+	4150 4850 4400 4850
+Wire Wire Line
+	3800 4400 3800 4850
+Wire Wire Line
+	3800 4850 4150 4850
+Connection ~ 4150 4850
+Wire Wire Line
+	4550 3700 3800 3700
+Wire Wire Line
+	3800 3700 3800 4100
+Wire Wire Line
+	3800 4950 3800 4850
+Connection ~ 3800 4850
+Wire Wire Line
+	3800 5250 3800 5300
+Wire Wire Line
+	3800 5300 5400 5300
+Connection ~ 6900 5300
+$Comp
+L uRack:CP C3
+U 1 1 5FCB96EC
+P 7400 4200
+F 0 "C3" H 7518 4246 50  0000 L CNN
+F 1 "100 uf" H 7518 4155 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P7.50mm" H 7438 4050 50  0001 C CNN
+F 3 "" H 7400 4200 50  0001 C CNN
+	1    7400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L uRack:Conn_01x02_Male J1
+U 1 1 5FCB9ED4
+P 3000 5150
+F 0 "J1" H 2972 5032 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 2972 5123 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3000 5150 50  0001 C CNN
+F 3 "" H 3000 5150 50  0001 C CNN
+	1    3000 5150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3200 5150 3200 5300
+Wire Wire Line
+	3200 5300 3800 5300
+Connection ~ 3800 5300
+Wire Wire Line
+	3200 5050 3200 4850
+Wire Wire Line
+	3200 4850 3800 4850
+$Comp
+L Device:L L1
+U 1 1 5FCBBE7F
+P 3450 3700
+F 0 "L1" V 3640 3700 50  0000 C CNN
+F 1 "L" V 3549 3700 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L20.3mm_D12.1mm_P7.62mm_Vertical_Vishay_IHA-101" H 3450 3700 50  0001 C CNN
+F 3 "~" H 3450 3700 50  0001 C CNN
+	1    3450 3700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3800 3700
+$Comp
+L uRack:GNDREF #PWR0101
+U 1 1 5FCBD024
+P 3150 3800
+F 0 "#PWR0101" H 3150 3550 50  0001 C CNN
+F 1 "GNDREF" H 3155 3627 50  0000 C CNN
+F 2 "" H 3150 3800 50  0001 C CNN
+F 3 "" H 3150 3800 50  0001 C CNN
+	1    3150 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L uRack:GNDREF #PWR0102
+U 1 1 5FCBD6BE
+P 5400 5450
+F 0 "#PWR0102" H 5400 5200 50  0001 C CNN
+F 1 "GNDREF" H 5405 5277 50  0000 C CNN
+F 2 "" H 5400 5450 50  0001 C CNN
+F 3 "" H 5400 5450 50  0001 C CNN
+	1    5400 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5450 5400 5300
+Connection ~ 5400 5300
+Wire Wire Line
+	5400 5300 6900 5300
+Wire Wire Line
+	3150 3800 3150 3700
+Wire Wire Line
+	3150 3700 3300 3700
+$Comp
+L uRack:+5V #PWR0103
+U 1 1 5FCBF5D2
+P 7400 3550
+F 0 "#PWR0103" H 7400 3400 50  0001 C CNN
+F 1 "+5V" H 7415 3723 50  0000 C CNN
+F 2 "" H 7400 3550 50  0001 C CNN
+F 3 "" H 7400 3550 50  0001 C CNN
+	1    7400 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3700 7400 3550
+Connection ~ 7400 3700
+$Comp
+L uRack:-9V #PWR0104
+U 1 1 5FCC1823
+P 3200 4700
+F 0 "#PWR0104" H 3200 4575 50  0001 C CNN
+F 1 "-9V" H 3215 4873 50  0000 C CNN
+F 2 "" H 3200 4700 50  0001 C CNN
+F 3 "" H 3200 4700 50  0001 C CNN
+	1    3200 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4850 3200 4700
+Connection ~ 3200 4850
+Wire Wire Line
+	3600 3700 3800 3700
+$Comp
+L uRack:R R4
+U 1 1 5FCCAB0C
+P 6400 4500
+F 0 "R4" V 6193 4500 50  0000 C CNN
+F 1 "20 k" V 6284 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6330 4500 50  0001 C CNN
+F 3 "" H 6400 4500 50  0001 C CNN
+	1    6400 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 4500 6650 4500
+Wire Wire Line
+	6650 4500 6650 4850
+Connection ~ 6650 4850
+Wire Wire Line
+	6650 4850 6900 4850
+Wire Wire Line
+	6250 4500 6100 4500
+Wire Wire Line
+	6100 4500 6100 4850
+Connection ~ 6100 4850
+Wire Wire Line
+	6100 4850 4400 4850
+$EndSCHEMATC
